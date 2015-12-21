@@ -8,10 +8,6 @@ a.navbar-brand {
 	font-size: 30px;
 }
 
-.navbar {
-	height: 80px;
-}
-
 .container-fluid {
 	padding-top: 10px;
 }
@@ -49,6 +45,20 @@ ul.nav.navbar-nav.navbar-right {
 	font-family: 'Caveat Brush', cursive;
 }
 
-/* .intro h3 {
-	font-family: 'Hind Vadodara', sans-serif;
-} */
+@media screen and (max-width: 480px) {
+	.intro {
+		margin-top: 125px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container-fluid {
+    	padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		height: 80px;
+	}	
+}
