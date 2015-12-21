@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat+Brush|Hind+Vadodara);
+
+html body {
+	font-family: 'Hind Vadodara', sans-serif;
+}
+
 a.navbar-brand {
 	font-size: 30px;
 }
@@ -14,4 +20,35 @@ ul.nav.navbar-nav.navbar-right {
     font-weight: 100;
     margin-top: 3px;
     font-size: 20px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+.landing-hero {
+	background: url('motivto-hero.jpeg') no-repeat center center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	width: 100%;
+	min-height: 550px;
+	max-height: 650px;
+	color: white;
+	margin-top: -20px;
+}
+
+.intro {
+	background: rgba(0,0,0, 0.5);
+	margin-top: 160px;
+	padding: 20px 0;
+}
+
+.intro h1 {
+	font-size: 65px;
+	text-shadow: rgba(0,0,0,0.95) 1px 1px;
+	display: inline;
+	font-family: 'Caveat Brush', cursive;
+}
+
+/* .intro h3 {
+	font-family: 'Hind Vadodara', sans-serif;
+} */
