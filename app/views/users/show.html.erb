@@ -7,4 +7,16 @@
 	<div class="col-xs-4 col-sm-5 col-sm-offset-1">
 		<h4>Image will go here.</h4>
 	</div>
+	
+	<div class="clearfix"></div>
+
+	<div class="show-lists text-center">
+		<h1>My Lists</h1>
+	</div>
+	<br />
+	<% current_user.lists.each do |list| %>
+		<h3 class="text-center">
+			<%= list.title %>
+		</h3>
+	<% end %>
 </div>
