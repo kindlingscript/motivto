@@ -1,10 +1,11 @@
 <br />
-
-<h1>Create a to-do list</h1>
-<br />
-<%= simple_form_for @list, :url => user_lists_path do |f| %>
-	<%= f.input :title %>
+<div class="col-xs-4 col-xs-offset-4">
+	<h1>Create a to-do list</h1>
 	<br />
-	<%= f.submit "Create your list", :class => 'btn btn-primary' %>
-<% end %>
+	<%= simple_form_for @list, :url => lists_path do |f| %>
+		<%= f.input :title %>
+		<br />
+		<%= f.submit "Create your list", :class => 'btn btn-primary' %>
+	<% end %>
+</div>
 <br />

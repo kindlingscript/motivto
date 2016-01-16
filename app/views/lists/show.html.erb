@@ -1,3 +1,9 @@
+<br />
 <div class="text-center">
 	<h1><%= current_list.title %></h1>
+	<% current_list.items.each do |item| %>
+		<h3><%= item.task %></h3>
+	<% end %>
+	<br />
+	<%= link_to 'add an item', new_list_item_path(current_list) %>
 </div>

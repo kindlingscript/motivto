@@ -1,0 +1,10 @@
+<br />
+<div class="col-xs-4 col-xs-offset-4">
+	<h1>Add items</h1>
+	<br />
+	<%= simple_form_for @item, :url => list_items_path do |f| %>
+		<%= f.input :task %>
+		<br />
+		<%= f.submit "Add item", :class => 'btn btn-primary' %>
+	<% end %>
+</div>
