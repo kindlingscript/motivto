@@ -30,15 +30,15 @@ ul.nav.navbar-nav.navbar-right {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 	width: 100%;
-	min-height: 550px;
-	max-height: 650px;
+	min-height: 730px;
+	max-height: 800px;
 	color: white;
 	margin-top: -20px;
 }
 
 .intro {
 	background: rgba(0,0,0, 0.5);
-	margin-top: 160px;
+	margin-top: 250px;
 	padding: 20px 0;
 }
 
@@ -58,6 +58,25 @@ ul.nav.navbar-nav.navbar-right {
 
 .show-lists {
 	margin-top: 150px;
+}
+
+.headings {
+	margin: 70px 30px;
+}
+
+h2.text-center {
+    font-size: 50px;
+    font-family: 'Caveat Brush', cursive;
+    margin-bottom: 50px;
+}
+
+.calls {
+	font-size: 20px;
+	margin-bottom: 70px;
+}
+
+span.glyphicon.glyphicon-list {
+	font-size: 100px;
 }
 
 @media screen and (max-width: 480px) {
