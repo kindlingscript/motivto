@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_merit
+
 	attr_accessor :login
 	has_many :lists
 	# Include default devise modules. Others available are:

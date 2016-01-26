@@ -1,7 +1,9 @@
 <div class="form-box">
 	<div class="col-xs-8 col-sm-4 col-sm-offset-2">
 		<h1><%= @user.username %></h1>
-		<h4>joined on <%= @user.created_at.strftime('%B %d, %Y') %></h3>
+		<h3>joined on <%= @user.created_at.strftime('%B %d, %Y') %></h3>
+		<h4><%= @user.points %> tasks completed</h4>
+		<h4>you are at Level <%= @user.level %></h4>
 	</div>
 
 	<div class="col-xs-4 col-sm-5 col-sm-offset-1">
