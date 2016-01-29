@@ -79,6 +79,18 @@ span.glyphicon.glyphicon-list {
 	font-size: 100px;
 }
 
+div.text-center.listing {
+	border: 3px solid #ccc;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 20px 0;
+    margin-top: 25px;
+}
+
+.pull-right {
+	padding-right: 30px;
+}
+
 @media screen and (max-width: 480px) {
 	.intro {
 		margin-top: 125px;

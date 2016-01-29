@@ -1,5 +1,5 @@
 <br />
-<div class="text-center">
+<div class="text-center listing col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
 	<h1><%= current_list.title %></h1>
 	<br />
 	<% current_list.items.each do |item| %>
@@ -9,5 +9,7 @@
 		<br /><br />
 	<% end %>
 	<br />
-	<%= link_to 'add an item', new_list_item_path(current_list) %>
+	<div class="pull-right">
+		<%= link_to 'add a new task', new_list_item_path(current_list), :class => 'btn btn-primary' %>
+	</div>
 </div>
