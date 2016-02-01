@@ -19,9 +19,8 @@
 	<div class="show-lists text-center">
 		<h1>My Lists</h1>
 	</div>
-	<br />
 	<% current_user.lists.each do |list| %>
-		<h3 class="text-center">
+		<h3 class="text-center col-xs-10 col-sm-4">
 			<%= link_to list.title, list_path(list) %>
 		</h3>
 	<% end %>
