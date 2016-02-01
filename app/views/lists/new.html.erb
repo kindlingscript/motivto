@@ -1,9 +1,10 @@
 <br />
 <div class="col-xs-4 col-xs-offset-4">
-	<h1>Create a to-do list</h1>
+	<h1>you've got things to do.</h1>
 	<br />
 	<%= simple_form_for @list, :url => lists_path do |f| %>
 		<%= f.input :title %>
+		<%= f.input :description, :placeholder => "Describe your list in more detail here. Is it for household chores? Professional development? Personal? Homework? You decide. :)" %>
 		<br />
 		<%= f.submit "Create your list", :class => 'btn btn-primary' %>
 	<% end %>
