@@ -23,7 +23,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:task)
+    params.require(:item).permit(:task, :row_order_position)
   end
 
   helper_method :current_list

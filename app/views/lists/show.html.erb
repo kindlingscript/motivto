@@ -10,7 +10,6 @@
     		});
     	}
     });
-    $('.tasks').disableSelection();
   });
 </script>
 <br />
@@ -18,7 +17,7 @@
 	<h1><%= current_list.title %></h1>
 	<ul class="tasks">
 		<% current_list.items.rank(:row_order).each do |item| %>
-				<li data-update-url=<%= item_path(item) %>>
+				<li data-update-url="<%= item_path(item) %>">
 					<%= link_to item_path(item), :method => :delete, class: "btn btn-default" do %>
 						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <%= item.task %>
 					<% end %>
