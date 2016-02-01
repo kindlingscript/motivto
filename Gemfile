@@ -15,6 +15,10 @@ gem 'devise'
 gem 'simple_form'
 # Use merit for gamification
 gem 'merit'
+# User ranked-model
+gem 'ranked-model'
+# Use jQuery UI
+gem 'jquery-ui-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

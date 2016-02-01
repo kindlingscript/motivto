@@ -15,6 +15,11 @@ class ItemsController < ApplicationController
     redirect_to root_path
   end
 
+  def update
+    current_item.update_attributes(item_params)
+    render text: 'moved!'
+  end
+
   private
 
   def item_params
@@ -24,5 +29,9 @@ class ItemsController < ApplicationController
   helper_method :current_list
   def current_list
     @current_list ||= List.find(params[:list_id])
+  end
+
+  def current_item
+    @current_item ||= Item.find(params[:id])
   end
 end
