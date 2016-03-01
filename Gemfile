@@ -15,6 +15,8 @@ gem 'devise'
 gem 'simple_form'
 # Use merit for gamification
 gem 'merit'
+# Use crono for merit rank update jobs
+gem 'crono'
 # User ranked-model
 gem 'ranked-model'
 # Use jQuery UI
